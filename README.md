@@ -82,5 +82,3 @@ Vulnerabilities Exploited
  CVE-2017-0199 - Microsoft Office / WordPad execution of arbitrary code
  CVE-2018-0802 - Equation Editor in Microsoft Office execution of arbitrary code
  CVE-2018-4878 - Adobe Flash execution of arbitrary code
-
-
