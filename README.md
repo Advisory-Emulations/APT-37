@@ -16,9 +16,12 @@ This folder has emulation plans for APT37 as threat actor, and a simulation play
 
 Initial access : APT37 uses Drive by Compromise and Phishing emails for gaining initial access. They compromise websites to send malware or phishing emails to victims. They change the phishing email contents based on the on-going issues to make it look legit. Use of torrent files also used to share the malware.
 
-Execution phase : They use vulnerabilities in Flash player, word for executing the malware. Malwares mentioned below and the cve's as well. VB scripts are sent(related to .Net framework). IPC(Inter process communication) techniques are used such as Dynamic Data Exchange to maintain a link between the process.They use flaws in client applications like web browsers, Flash player and Microsoft office file. or Used Native API to execute code along with the local OS processes. // Extra ***Other techniques that can be used COm(Common object model) to execute code in local or Used Native API to execute code along with the local OS processes. // Extra ** .Net code inside the downloaded file is suspicious They use flaws in client applications like web browsers, Flash players and Microsoft office files. // Extra **Check for processes running when you boot your system
+Execution phase : They use vulnerabilities in Flash player, word for executing the malware. Malwares mentioned below and the cve's as well. VB scripts are sent(related to .Net framework). IPC(Inter process communication) techniques are used such as Dynamic Data Exchange to maintain a link between the process.They use flaws in client applications like web browsers, Flash player and Microsoft office file. or Used Native API to execute code along with the local OS processes. APT37 has used Flash Player (CVE-2016-4117, CVE-2018-4878) and Word (CVE-2017-0199) exploits for execution. 
+Links : 
+cve-2016-4117 : https://www.fireeye.com/blog/threat-research/2016/05/cve-2016-4117-flash-zero-day.html
+// Extra ***Other techniques that can be used COm(Common object model) to execute code in local or Used Native API to execute code along with the local OS processes. // Extra ** .Net code inside the downloaded file is suspicious They use flaws in client applications like web browsers, Flash players and Microsoft office files. // Extra **Check for processes running when you boot your system
 
-Persistence : Using registry keys and startup folder, execution of the malware takes place when the system boots. // Extra ** registry key check and analyse the processes running when system boot is suggested
+Persistence : Using registry keys and startup folder, execution of the malware takes place when the system boots. // Extra ** registry key check and analyse the processes running when system boot is suggested. They inject malware varient ROKRAT into cmd.exe or explorer.exe. 
 
 4. Privilege Escalation
 5. Defense Evasion
