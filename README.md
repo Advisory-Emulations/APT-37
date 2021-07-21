@@ -21,17 +21,21 @@ Links :
 cve-2016-4117 : https://www.fireeye.com/blog/threat-research/2016/05/cve-2016-4117-flash-zero-day.html
 // Extra ***Other techniques that can be used COm(Common object model) to execute code in local or Used Native API to execute code along with the local OS processes. // Extra ** .Net code inside the downloaded file is suspicious They use flaws in client applications like web browsers, Flash players and Microsoft office files. // Extra **Check for processes running when you boot your system
 
-Persistence : Using registry keys and startup folder, execution of the malware takes place when the system boots. // Extra ** registry key check and analyse the processes running when system boot is suggested. They inject malware varient ROKRAT into cmd.exe or explorer.exe. 
+Persistence : Using registry keys and startup folder, execution of the malware takes place when the system boots.They has added persistence via the Registry key HKCU\Software\Microsoft\CurrentVersion\Run\ // Extra ** registry key check and analyse the processes running when system boot is suggested. 
 
-4. Privilege Escalation
-5. Defense Evasion
-6. Credential access
-7. Discovery
-8. Lateral Movement
-9. Collection
-10. Command and control
-11. Exfilteration
-12. Impact
+4. Privilege Escalation: They inject malware varient ROKRAT into cmd.exe or explorer.exe. They use Windows User Account Control (UAC) allows a program to elevate its privileges.
+Link 
+ROKRAT: https://research.nccgroup.com/2018/11/08/rokrat-analysis/
+UAC : https://github.com/hfiref0x/UACME
+5. Defense Evasion : They used has signed its malware with an invalid digital certificates listed as "Tencent Technology (Shenzhen) Company Limited to evade the dettection from tools and from analysts. they use  uses steganography to send images to users that are embedded with shellcode.
+6. Credential access : They use has used a credential stealer known as ZUMKONG that can harvest usernames and passwords stored in browsers.
+7. Discovery : They has a has a Bluetooth device harvester, which uses Windows Bluetooth APIs to find information on connected Bluetooth devices for peripheral process discovery. They use Freenki malware lists running processes using the Microsoft Windows API(process discovery). they collect the computer name, the BIOS model, and execution path and also identifies the victim username
+Bluetooth Harvester : https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+8. Lateral Movement : N/A
+10. Collection : 
+11. Command and control
+12. Exfilteration
+13. Impact
 
 
 Relate to Mitre matrix
@@ -85,3 +89,9 @@ Vulnerabilities Exploited
  CVE-2017-0199 - Microsoft Office / WordPad execution of arbitrary code
  CVE-2018-0802 - Equation Editor in Microsoft Office execution of arbitrary code
  CVE-2018-4878 - Adobe Flash execution of arbitrary code
+ 
+ 
+ Good Questions :
+ What is PEB ?
+ How Windows User Account Control (UAC) allows a program to elevate its privileges ?
+ WHat is ZUMKONG how it works ?
