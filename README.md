@@ -40,7 +40,9 @@ Bluetooth Harvester : https://securelist.com/scarcruft-continues-to-evolve-intro
 
 Relate to Mitre matrix
 Cyber kill chain process :
+
 1. Reconnaissance: Intruder selects target, researches it, and attempts to identify vulnerabilities in the target network.
+
 Weaponization: Intruder creates remote access malware weapon, such as a virus or worm, tailored to one or more vulnerabilities.
 Delivery: Intruder transmits weapon to target (e.g., via e-mail attachments, websites or USB drives)
 Exploitation: Malware weapon's program code triggers, which takes action on target network to exploit vulnerability.
