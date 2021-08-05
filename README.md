@@ -31,7 +31,7 @@ UAC : https://github.com/hfiref0x/UACME
 6. Credential access : They use has used a credential stealer known as ZUMKONG that can harvest usernames and passwords stored in browsers.
 7. Discovery : They has a has a Bluetooth device harvester, which uses Windows Bluetooth APIs to find information on connected Bluetooth devices for peripheral process discovery. They use Freenki malware lists running processes using the Microsoft Windows API(process discovery). they collect the computer name, the BIOS model, and execution path and also identifies the victim username
 Bluetooth Harvester : https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
-8. Lateral Movement : N/A
+8. Lateral Movement : 
 10. Collection : 
 11. Command and control
 12. Exfilteration
